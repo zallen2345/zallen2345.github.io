@@ -71,8 +71,8 @@
   
     <article id="post-cpp_coding" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2024/02/26/cpp_coding/" class="article-date">
-  <time class="dt-published" datetime="2024-02-26T11:30:10.000Z" itemprop="datePublished">2024-02-26</time>
+    <a href="/2024/02/27/cpp_coding/" class="article-date">
+  <time class="dt-published" datetime="2024-02-27T09:35:10.000Z" itemprop="datePublished">2024-02-27</time>
 </a>
     
   </div>
@@ -83,7 +83,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2024/02/26/cpp_coding/">C++入门</a>
+      <a class="p-name article-title" href="/2024/02/27/cpp_coding/">C++入门</a>
     </h1>
   
 
@@ -91,14 +91,14 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>在这一篇文章中,我会讲C++入门操作.<br>首先你必须有一个C++软件,我推荐Dev-c++但也可以用vscode（全英文）<br>vscode下载链接点<a target="_blank" rel="noopener" href="https://code.visualstudio.com/download">这里</a>.<br>如何安装就点<a target="_blank" rel="noopener" href="https://blog.csdn.net/msdcp/article/details/127033151">这里</a>.<br>接下来就是基础操作.<br>首先要认识一个东西叫做头文件,c++会拿一个头文件用于下面的代码.<br>样子是: #include&lt;&gt;,我们要用的是iostream,用它就可以用cin和cout,<br>分别是输入和输出. 下面是个例子:</p>
+        <p>在这一篇文章中,我会讲C++入门操作.<br>首先你必须有一个C++软件,我推荐Dev-c++但也可以用vscode（全英文）<br>vscode下载链接点<a target="_blank" rel="noopener" href="https://code.visualstudio.com/download">这里</a>.<br>如何安装就点<a target="_blank" rel="noopener" href="https://blog.csdn.net/msdcp/article/details/127033151">这里</a>.<br>接下来就是基础操作.<br>首先要认识一个东西叫做头文件,c++会拿一个头文件用于下面的代码<br>样子是: <code>#include&lt;&gt;</code> ,我们要用的是iostream,用它就可以用cin和cout,分别是输入和输出.<br>下一句就直接写<code>using namespace std;</code>就可以了,不用特别记住含义.<br>下面是个例子:</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;hello,world!&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>它的输出是: hello,world! 注:要换行的话尾部加个endl或\n.<br> <code>cout&lt;&lt;&quot;hi!\n&quot;;</code>或 <code>cout&lt;&lt;&quot;hi&quot;&lt;&lt;endl;</code><br> 下面是cin的例子:<br> <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    cout&lt;&lt;n;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br><code>int n;</code> 表示定义一个int形式的n,<code>cin&gt;&gt;n;</code> 就是输入了.<br>就讲到这吧qwq</p>
+<p>它的输出是: hello,world! 注:要换行的话尾部加个endl或\n.<br> <code>cout&lt;&lt;&quot;hi!\n&quot;;</code>或 <code>cout&lt;&lt;&quot;hi&quot;&lt;&lt;endl;</code><br> 下面是cin的例子:<br> <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    cin&gt;&gt;n;</span><br><span class="line">    cout&lt;&lt;n;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br><code>int n;</code> 表示定义一个int形式的n,<code>cin&gt;&gt;n;</code> 就是输入了.<br>这就是一个输入什么数字,就输出什么数字的程序.<br>就讲到这吧qwq</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/02/26/cpp_coding/" data-id="clt2wnexb0000u8uqa3khamzq" data-title="C++入门" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2024/02/27/cpp_coding/" data-id="clt46hp9l0000kguqg7l3edoh" data-title="C++入门" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -139,7 +139,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/02/26/hi/" data-id="clt2wnexn0003u8uqbyat3c73" data-title="hi" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2024/02/26/hi/" data-id="clt46hp9w0004kguq4pe8c3hw" data-title="hi" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -192,7 +192,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/02/25/hello-world/" data-id="clt2wnexi0001u8uqhqjg2cs4" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2024/02/25/hello-world/" data-id="clt46hp9v0003kguq4ehzb74n" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -249,7 +249,7 @@
       <ul>
         
           <li>
-            <a href="/2024/02/26/cpp_coding/">C++入门</a>
+            <a href="/2024/02/27/cpp_coding/">C++入门</a>
           </li>
         
           <li>
