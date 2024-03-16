@@ -69,6 +69,49 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-genshin" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/03/16/genshin/" class="article-date">
+  <time class="dt-published" datetime="2024-03-16T12:58:34.000Z" itemprop="datePublished">2024-03-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/03/16/genshin/">原神,启动!</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>我用c++做了一个神奇的东西qwq<br>来自csdn的大佬,我后面又改了一下</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;windows.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> KEY_DOWN(VK_NONAME) ((GetAsyncKeyState(VK_NONAME) &amp; 0x8000) ? 1:0)</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">double</span> a=<span class="number">2087</span>;<span class="comment">//原分辨率</span></span><br><span class="line">	<span class="type">double</span> b=<span class="number">1087</span>;<span class="comment">//原分辨率</span></span><br><span class="line">	<span class="type">double</span> nScreenWidth, nScreenHeight;</span><br><span class="line">    nScreenWidth = <span class="built_in">GetSystemMetrics</span>(SM_CXSCREEN);</span><br><span class="line">    nScreenHeight = <span class="built_in">GetSystemMetrics</span>(SM_CYSCREEN);</span><br><span class="line">	HWND hwnd=<span class="built_in">FindWindow</span>(<span class="string">&quot;SYSTEM.exe&quot;</span>,<span class="literal">NULL</span>);</span><br><span class="line">    <span class="keyword">if</span>(hwnd)&#123;</span><br><span class="line">        <span class="built_in">ShowWindow</span>(hwnd,SW_HIDE);               <span class="comment">//设置指定窗口的显示状态</span></span><br><span class="line">    &#125;<span class="comment">//隐藏窗口</span></span><br><span class="line">	<span class="built_in">system</span>(<span class="string">&quot;start https://www.bilibili.com/video/av446385456/?vd_source=848a7eff2ff6f7987556d42fbeffa7fd%2Ffullscreen/&quot;</span>);<span class="comment">//此处我就用原神的网址举例</span></span><br><span class="line">	<span class="built_in">Sleep</span>(<span class="number">2500</span>);</span><br><span class="line">	POINT p;</span><br><span class="line">	POINT q;</span><br><span class="line">	p.x=<span class="number">187</span>;</span><br><span class="line">	p.y=<span class="number">854</span>;</span><br><span class="line">	q.x=p.x*(nScreenWidth/a);</span><br><span class="line">	q.y=p.y*(nScreenHeight/b);</span><br><span class="line">	<span class="built_in">SetCursorPos</span>(q.x,q.y);</span><br><span class="line">	<span class="built_in">mouse_event</span>(MOUSEEVENTF_LEFTDOWN,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">	<span class="built_in">mouse_event</span>(MOUSEEVENTF_LEFTUP,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">	<span class="built_in">Sleep</span>(<span class="number">1000</span>);</span><br><span class="line">	<span class="built_in">mouse_event</span>(MOUSEEVENTF_LEFTDOWN,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">	<span class="built_in">mouse_event</span>(MOUSEEVENTF_LEFTUP,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">	<span class="built_in">Sleep</span>(<span class="number">1000</span>);</span><br><span class="line">	<span class="built_in">keybd_event</span>(<span class="string">&#x27;F&#x27;</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">	<span class="built_in">keybd_event</span>(<span class="string">&#x27;F&#x27;</span>,<span class="number">0</span>,KEYEVENTF_KEYUP,<span class="number">0</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意:运行时千万不要移动 <strong>鼠标</strong>!<br>用dev-c++运行更好awa</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/03/16/genshin/" data-id="cltu3mulq0003vsuq4kw212vn" data-title="原神,启动!" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/coding/" rel="tag">coding</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-welcome" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2024/03/10/welcome/" class="article-date">
@@ -99,7 +142,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/03/10/welcome/" data-id="cltkwjl49000188uqavxg0bvt" data-title="欢迎x2!" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2024/03/10/welcome/" data-id="cltu3muly000avsuqhvv520li" data-title="欢迎x2!" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -142,7 +185,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/02/27/cpp_coding/" data-id="cltkwjl43000088uq1c9fgehs" data-title="C++入门" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2024/02/27/cpp_coding/" data-id="cltu3muld0000vsuq4uticlnz" data-title="C++入门" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -183,7 +226,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/02/26/hi/" data-id="cltkwjl56000788uq0ylthxkd" data-title="hi" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2024/02/26/hi/" data-id="cltu3mulr0004vsuqdlgz1xqn" data-title="hi" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -236,7 +279,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2024/02/25/hello-world/" data-id="cltkwjl4e000388uq36f7241w" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2024/02/25/hello-world/" data-id="cltu3mull0001vsuqd61o272b" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -271,7 +314,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/coding/" style="font-size: 10px;">coding</a> <a href="/tags/welcome/" style="font-size: 20px;">welcome</a>
+      <a href="/tags/coding/" style="font-size: 10px;">coding</a> <a href="/tags/welcome/" style="font-size: 10px;">welcome</a>
     </div>
   </div>
 
@@ -291,6 +334,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2024/03/16/genshin/">原神,启动!</a>
+          </li>
         
           <li>
             <a href="/2024/03/10/welcome/">欢迎x2!</a>
